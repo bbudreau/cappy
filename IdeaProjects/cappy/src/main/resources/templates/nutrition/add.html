@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head th:replace="fragments :: head"></head>
+
+<body>
+<h1 th:text="${title}">Title</h1>
+<form method="post">
+    Food<input type="text" name="foodName"/>
+    Calories<input type="text" name="foodName"/>
+    <input type="submit" value="Add Food"/>
+
+
+</form>
+</body>
+</html>

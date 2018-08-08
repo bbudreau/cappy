@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head th:replace="fragments :: head"></head>
+
+<body>
+<div class="jumbotron" style="text-align: center;">
+    <h2>Where the real work begins.</h2>
+    <p>Say hello to Stevia.</p>
+</div>
+<a href="/home/nutrition/add">Add Calories</a>
+<p th:unless="${foods} and ${foods.size()}">Nom Nom Nom</p>
+
+<ul>
+    <li th:each="food : ${foods}" th:text="${food}"></li>
+</ul>
+</body>
+</html>
